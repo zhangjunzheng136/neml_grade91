@@ -26,26 +26,33 @@ If you are on Windows, use **WSL 2**.
 Update the system and install basic tools (wget, pip):
 
 sudo apt-get update
+
 sudo apt-get install wget ca-certificates
+
 sudo apt install python3-pip
 
-Install Miniconda: Please refer to the official guide: Miniconda Installation for Linux
+Install Miniconda: Please refer to the official guide: (https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2)
 
 Accept Conda terms:
 
 conda tos accept --override-channels --channel [https://repo.anaconda.com/pkgs/main](https://repo.anaconda.com/pkgs/main)
+
 conda tos accept --override-channels --channel [https://repo.anaconda.com/pkgs/r](https://repo.anaconda.com/pkgs/r)
+
+
 Install BLAS and LAPACK in your desired Conda environment:
 
-
 conda install conda-forge::blas
+
 conda install conda-forge::lapack
 ### 3. Install NEML Python Bindings
 Install system dependencies and the neml package:
 
-
 sudo apt-get install python3-dev python3-pip cmake libboost-dev libblas-dev liblapack-dev
+
 pip install neml
+
+
 ✅ Validation
 Once the environment is set up, the Grade 91 implementation should work. The validation source is based on the examples provided by the model author: https://www.osti.gov/biblio/1601806.
 
