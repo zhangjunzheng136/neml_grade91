@@ -24,28 +24,25 @@ If you are on Windows, use **WSL 2**.
 
 ### 2. Update Environment & Install Dependencies
 Update the system and install basic tools (wget, pip):
-```bash
+
 sudo apt-get update
 sudo apt-get install wget ca-certificates
 sudo apt install python3-pip
+
 Install Miniconda: Please refer to the official guide: Miniconda Installation for Linux
 
 Accept Conda terms:
-
-Bash
 
 conda tos accept --override-channels --channel [https://repo.anaconda.com/pkgs/main](https://repo.anaconda.com/pkgs/main)
 conda tos accept --override-channels --channel [https://repo.anaconda.com/pkgs/r](https://repo.anaconda.com/pkgs/r)
 Install BLAS and LAPACK in your desired Conda environment:
 
-Bash
 
 conda install conda-forge::blas
 conda install conda-forge::lapack
-3. Install NEML Python Bindings
+### 3. Install NEML Python Bindings
 Install system dependencies and the neml package:
 
-Bash
 
 sudo apt-get install python3-dev python3-pip cmake libboost-dev libblas-dev liblapack-dev
 pip install neml
